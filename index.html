@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Riddle Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+
+    <script src="p5.play.js"></script>
+    <script src="contestant.js"></script>
+    <script src="question.js"></script>
+    <script src="quiz.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBdItVmOSGauIXP1M-U8aoW-X8slR_rtHo",
+    authDomain: "project-37-whtjr-myquiz.firebaseapp.com",
+    databaseURL: "https://project-37-whtjr-myquiz-default-rtdb.firebaseio.com",
+    projectId: "project-37-whtjr-myquiz",
+    storageBucket: "project-37-whtjr-myquiz.appspot.com",
+    messagingSenderId: "888122712648",
+    appId: "1:888122712648:web:20f5001773ef341452ee7d"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    <style type="text/css">
+    #p1 {
+      color : black;
+      text-align: right;
+      font-family: Arial, Helvetica, sans-serif;  
+    }
+
+    #p2 {
+      color: rgb(255, 38, 0);
+      text-align: center;
+      text-decoration: turquoise;
+      text-shadow: tomato;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+  </style>
+  </head>
+  <body style = "background-color: rgb(255, 217, 0);">
+    <script src="sketch.js"></script>
+
+    <h2 id="p2"> My Riddle V1 </h2>
+    <p id="p1"> Need help? Scroll all the way down for some guidance. </p>
+
+  </body>
+</html>
